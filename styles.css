@@ -1,0 +1,307 @@
+html{
+    scroll-behavior: unset !important;
+}
+
+body {
+background-color: #f5f5f5;
+position: relative;
+overflow: hidden;
+
+}
+.main { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('images/person1.jpg'); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+
+
+}
+
+#navbar{
+    transition: all 500ms;
+    z-index: 7;
+}
+
+.options a { 
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 10px;
+    position: relative;
+}
+
+.Nav h1 { font-size: 30px; }
+
+
+.underline::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: auto;
+    width: 0px;
+    height: 2px;
+    background-color: transparent;
+    transition: 0.5s;
+    
+}
+
+.underline:hover::before
+
+{
+    background-color: white;
+    width: 65%;
+}
+
+.name h1 { 
+    font-size: 75px;
+    color: white;
+}
+
+.about-me::after {
+    content: "";
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    bottom: -12px;
+    left: auto;
+    background-color: #0d6efd;
+}
+
+.underline-service { 
+     
+width: 40px;
+height: 5px;
+background-color: #0d6efd;
+}
+
+.ico-circle { 
+
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    border-color: #0d6efd;
+    border-style: solid;
+    border-width: 10px;
+    background-color: transparent;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+
+
+.icon-text { 
+    font-size: 40px;
+    transform: translateY(50%);
+ }
+
+
+ .function:hover .ico-circle{ 
+ color: white;
+ border-color:rgba(13, 110, 253, 0.5) ;
+ background-color: rgb(13, 110, 253) ;
+ background-clip: padding-box;
+ }
+
+ .ico-chart { 
+
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: 10px;
+    background-color: transparent;
+    transition: 0.5s;
+    overflow: hidden;
+    color: white;
+ }
+
+ .icon-chart { 
+    font-size: 30px;
+    transform: translateY(50%);
+ }
+ .charts { 
+ background-image: linear-gradient(rgba(13, 110, 253, 0.7), rgba(13, 110, 253, 0.7)), url('images/person14.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+ } 
+
+.w-title { 
+    font-size: 1.2rem;
+}
+
+.w-data {
+
+    font-size: 0.8rem;
+}
+
+.web-design { 
+
+    color: #0d6efd;
+}
+
+.service-ico {
+ font-size: 35px;
+ position: absolute;
+ bottom: 0px;
+ right: 10px;
+ color: #0d6efd;
+}
+
+.porto-photo {
+    overflow: hidden;
+    transition: 1s;
+ }
+
+ .porto-card img { 
+    transition: 1s;
+ }
+
+.porto-card:hover img { 
+ 
+    transform: scale(1.5);
+    overflow: hidden;
+    transition: 1s;
+}
+
+.author img { width: 10%;
+
+border-radius: 50%;
+}
+
+
+
+.author a { text-decoration: none;
+color: black; 
+transition: 0.5s;
+padding-left: 5px;}
+
+.author:hover a { 
+    color: #0d6efd;
+ }
+
+ 
+ .ticket-box { margin: auto;
+text-align: center;
+color: white;
+box-sizing: border-box;
+margin: auto;
+position: absolute;
+top: -15px;
+left: 15px;
+right: 15px;
+}
+
+.ticket { 
+    text-align: center;
+    width: fit-content;
+    background-color: #0d6efd; 
+    box-sizing: border-box;
+margin: auto;
+padding: 5px 15px;
+border-radius: 4px;
+}
+
+.ticket h6 { margin: 0px !important;}
+
+
+
+.hour-icon::after {
+    content: "10 min";
+    font-size: 15px;
+}
+
+.comments-overlay { 
+    background-image: linear-gradient(rgba(13, 110, 253, 0.7), rgba(13, 110, 253, 0.7)), url('images/person10.jpg'); 
+    background-attachment: fixed;
+}
+
+.comment-photo { width: 10%; 
+
+    margin: auto;
+    
+}
+
+.carousel-indicators button { 
+    
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;  }
+
+
+
+.comment-font { font-weight: 300; 
+
+    font-size: 30px;
+    padding: 20px 0px;
+
+} 
+
+#sidebar{
+    
+    
+    position: fixed;
+    top: 200px;
+    left: -250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 5;
+} 
+#sideoptions{
+    background-color: #0d6efd;
+}
+
+#sideicon{
+    border: #0d6efd solid 2px;
+    font-size: 25px;
+    color: #0d6efd;
+    
+}
+
+.colorslist{
+    display: flex;
+    justify-content: space-around;
+}
+
+.colorbox{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+} 
+.sampleImg{
+    margin: 5px;
+    width: 30px;
+    height: 25px;
+}
+
+#loadingscreen{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0d6efd;
+    z-index: 10;
+    opacity: 0.7;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+#loadingscreen svg {
+    font-size: 100px;
+    animation: mymove 2000ms linear infinite;
+    color: white;
+}
+
+@keyframes mymove{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    
+}
